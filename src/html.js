@@ -1,33 +1,26 @@
-import React from "react"
-import PropTypes from "prop-types"
-
-export default function HTML(props) {
-  return (
-    <html {...props.htmlAttributes}>
-      <head>
-        {props.headComponents}
-      </head>
-      <body {...props.bodyAttributes}>
-        {props.preBodyComponents}
-        <noscript key="noscript" id="gatsby-noscript">
-          This app works best with JavaScript enabled.
-        </noscript>
-        <div
-          key={`body`}
-          id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
-        />
-        {props.postBodyComponents}
-      </body>
-    </html>
-  )
-}
-
-HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
-}
+<body>
+<!-- Navigation -->
+ <nav class="navbar-inverse" role="navigation">
+ <div class="container-fluid">
+ <!-- Brand and toggle get grouped for better mobile display -->
+ <div class="navbar-header">
+ <button type="button" class="navbar-toggle collapsed" datatoggle="collapse" data-target="#bs-example-navbar-collapse-1">
+ <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ </button>
+ <a class="navbar-brand" href="ecommerce.html">Bootstrap
+Store</a>
+ </div>
+ <!-- Collect the nav links, forms, and other content for
+toggling -->
+ <div class="collapse navbar-collapse" id="bs-example-navbarcollapse-1">
+ </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+ </nav>
+ <!-- jQuery Version 1.11.0 -->
+ <script src="js/jquery-1.11.1.js"></script>
+ <!-- Bootstrap Core JavaScript -->
+ <script src="js/bootstrap.js"></script>
+</body>
